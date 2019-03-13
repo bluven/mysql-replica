@@ -1,0 +1,268 @@
+2019-03-13 08:16:52 INFO starting orchestrator, version: 3.0.14, git commit: f4c69ad05010518da784ce61865e65f0d9e0081c
+2019-03-13 08:16:52 INFO Read config: /etc/orchestrator.conf.json
+2019-03-13 08:16:52 DEBUG Connected to orchestrator backend: root:?@tcp(127.0.0.1:3306)/orc?timeout=1s
+2019-03-13 08:16:52 DEBUG Orchestrator pool SetMaxOpenConns: 128
+2019-03-13 08:16:52 DEBUG Initializing orchestrator
+2019-03-13 08:16:52 INFO Connecting to backend 127.0.0.1:3306: maxConnections: 128, maxIdleConns: 32
+2019-03-13 08:16:53 INFO Starting Discovery
+2019-03-13 08:16:53 INFO Registering endpoints
+2019-03-13 08:16:53 INFO continuous discovery: setting up
+2019-03-13 08:16:53 INFO continuous discovery: starting
+2019-03-13 08:16:53 DEBUG Queue.startMonitoring(DEFAULT)
+2019-03-13 08:16:53 INFO Starting HTTP listener on :3333
+2019-03-13 08:16:55 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:16:56 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:16:57 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:16:58 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:16:59 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:00 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:01 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:02 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:03 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:04 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:05 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:06 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:06 ERROR Error 1053: Server shutdown in progress
+2019-03-13 08:17:06 ERROR ReadTopologyInstance(bluven:24801) show variables like 'maxscale%': Error 1053: Server shutdown in progress
+[mysql] 2019/03/13 08:17:06 packets.go:36: unexpected EOF
+2019-03-13 08:17:06 ERROR invalid connection
+[mysql] 2019/03/13 08:17:06 packets.go:36: unexpected EOF
+[mysql] 2019/03/13 08:17:06 packets.go:36: unexpected EOF
+2019-03-13 08:17:06 ERROR invalid connection
+2019-03-13 08:17:06 ERROR invalid connection
+[mysql] 2019/03/13 08:17:06 connection.go:372: invalid connection
+[mysql] 2019/03/13 08:17:06 connection.go:372: invalid connection
+2019-03-13 08:17:07 WARNING  DiscoverInstance(bluven:24801) instance is nil in 0.116s (Backend: 0.114s, Instance: 0.002s), error=invalid connection
+2019-03-13 08:17:07 DEBUG Waiting for 15 seconds to pass before running failure detection/recovery
+2019-03-13 08:17:09 DEBUG analysis: IsMaster: true, LastCheckValid: false, LastCheckPartialSuccess: true, CountReplicas: 2, CountValidReplicatingReplicas: 2, CountLaggingReplicas: 0, CountDelayedReplicas: 0, 
+[mysql] 2019/03/13 08:17:13 connection.go:372: invalid connection
+2019-03-13 08:17:13 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:13 DEBUG analysis: IsMaster: true, LastCheckValid: false, LastCheckPartialSuccess: false, CountReplicas: 2, CountValidReplicatingReplicas: 0, CountLaggingReplicas: 0, CountDelayedReplicas: 0, 
+2019-03-13 08:17:13 WARNING executeCheckAndRecoverFunction: ignoring analysisEntry that has no action plan: FirstTierSlaveFailingToConnectToMaster; key: bluven:24803
+2019-03-13 08:17:13 WARNING executeCheckAndRecoverFunction: ignoring analysisEntry that has no action plan: FirstTierSlaveFailingToConnectToMaster; key: bluven:24802
+2019-03-13 08:17:13 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:14 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:15 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:15 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:16 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:17 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:17 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:18 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:18 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:19 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:20 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:21 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:21 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:22 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:22 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:23 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:24 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:25 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:25 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:26 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:27 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:27 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:28 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:29 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:29 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:30 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:30 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:30 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:32 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:33 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:33 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:33 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:34 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:35 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:35 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:36 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:36 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:37 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:38 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:38 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:39 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:40 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:40 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:40 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:42 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:42 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:43 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:44 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:45 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:46 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:47 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:47 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:47 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:49 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:50 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:50 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:50 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:51 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:52 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:53 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:53 INFO auditType:forget-unseen-differently-resolved instance::0 cluster: message:Forgotten instances: 0
+2019-03-13 08:17:53 INFO auditType:inject-unseen-masters instance::0 cluster: message:Operations: 0
+2019-03-13 08:17:53 ERROR Will not resolve empty hostname
+2019-03-13 08:17:53 INFO auditType:review-unseen-instances instance::0 cluster: message:Operations: 0
+2019-03-13 08:17:53 INFO auditType:forget-unseen instance::0 cluster: message:Forgotten instances: 0
+2019-03-13 08:17:53 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:53 INFO auditType:resolve-unknown-masters instance::0 cluster: message:Num resolved hostnames: 0
+2019-03-13 08:17:53 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:55 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:55 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:56 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:57 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:57 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:58 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:17:58 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:59 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:17:59 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:00 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:00 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:02 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:02 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+[martini] Started GET /web/clusters/ for 127.0.0.1:42598
+[martini] Completed 200 OK in 13.736125ms
+[martini] Started GET /api/clusters-info for 127.0.0.1:42598
+[martini] Started GET /api/check-global-recoveries for 127.0.0.1:42614
+[martini] Completed 200 OK in 1.067568ms
+[martini] Completed 200 OK in 759.466µs
+[martini] Started GET /api/clusters-info for 127.0.0.1:42614
+[martini] Started GET /api/problems for 127.0.0.1:42598
+[martini] Completed 200 OK in 974.992µs
+[martini] Completed 200 OK in 1.468281ms
+[martini] Started GET /api/replication-analysis for 127.0.0.1:42614
+[martini] Started GET /api/maintenance for 127.0.0.1:42598
+[martini] Completed 200 OK in 652.154µs
+[martini] Completed 200 OK in 2.386194ms
+[martini] Started GET /api/problems for 127.0.0.1:42614
+[martini] Completed 200 OK in 1.248398ms
+2019-03-13 08:18:03 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:04 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+[martini] Started GET /web/cluster/bluven:24801 for 127.0.0.1:42598
+[martini] Completed 200 OK in 6.185654ms
+[martini] Started GET /api/clusters-info for 127.0.0.1:42614
+[martini] Completed 200 OK in 848.115µs
+[martini] Started GET /api/check-global-recoveries for 127.0.0.1:42614
+[martini] Completed 200 OK in 1.040918ms
+[martini] Started GET /api/cluster/bluven:24801 for 127.0.0.1:42614
+[martini] Started GET /api/cluster-info/bluven:24801 for 127.0.0.1:42598
+[martini] Completed 200 OK in 1.072581ms
+[martini] Completed 200 OK in 1.953332ms
+[martini] Started GET /api/active-cluster-recovery/bluven:24801 for 127.0.0.1:42622
+[martini] Completed 200 OK in 1.146758ms
+[martini] Started GET /api/recently-active-cluster-recovery/bluven:24801 for 127.0.0.1:42614
+[martini] Started GET /api/blocked-recoveries/cluster/bluven:24801 for 127.0.0.1:42622
+[martini] Completed 200 OK in 754.71µs
+[martini] Completed 200 OK in 606.119µs
+[martini] Started GET /api/problems/bluven:24801 for 127.0.0.1:42614
+[martini] Completed 200 OK in 1.437675ms
+[martini] Started GET /api/audit-recovery/alias/bluven for 127.0.0.1:42614
+[martini] Started GET /api/audit-failure-detection/alias/bluven for 127.0.0.1:42622
+[martini] Completed 200 OK in 1.109728ms
+[martini] Completed 200 OK in 877.747µs
+[martini] Started GET /api/replication-analysis/bluven:24801 for 127.0.0.1:42614
+[martini] Started GET /api/maintenance for 127.0.0.1:42622
+[martini] Completed 200 OK in 2.366023ms
+[martini] Completed 200 OK in 649.921µs
+[martini] Started GET /api/maintenance for 127.0.0.1:42614
+[martini] Completed 200 OK in 667.651µs
+[martini] Started GET /api/recently-active-instance-recovery/bluven/24801 for 127.0.0.1:42614
+[martini] Completed 200 OK in 1.135651ms
+2019-03-13 08:18:05 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:06 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:06 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:06 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:06 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:08 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:08 ERROR ReadTopologyInstance(bluven:24801) show variables like 'maxscale%': dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:09 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:09 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:10 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:10 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:11 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:12 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:12 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:13 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:13 WARNING  DiscoverInstance(bluven:24801) instance is nil in 0.137s (Backend: 0.136s, Instance: 0.001s), error=dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:13 DEBUG analysis: IsMaster: true, LastCheckValid: false, LastCheckPartialSuccess: false, CountReplicas: 2, CountValidReplicatingReplicas: 0, CountLaggingReplicas: 0, CountDelayedReplicas: 0, 
+2019-03-13 08:18:13 WARNING executeCheckAndRecoverFunction: ignoring analysisEntry that has no action plan: FirstTierSlaveFailingToConnectToMaster; key: bluven:24803
+2019-03-13 08:18:13 WARNING executeCheckAndRecoverFunction: ignoring analysisEntry that has no action plan: FirstTierSlaveFailingToConnectToMaster; key: bluven:24802
+2019-03-13 08:18:13 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:14 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:15 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:15 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:16 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:17 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:18 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:19 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:19 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:19 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:20 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:21 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:21 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:22 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:23 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:24 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:24 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:24 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:26 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:26 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:27 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:28 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:28 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:29 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:30 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:30 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:30 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:32 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:32 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:33 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:34 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:35 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:36 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:37 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:37 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:37 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:39 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:40 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:40 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:41 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:42 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:42 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:43 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:44 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:44 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:45 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:45 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:47 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:48 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:48 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:49 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:50 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:50 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:50 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:52 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:52 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:53 INFO auditType:forget-unseen instance::0 cluster: message:Forgotten instances: 0
+2019-03-13 08:18:53 INFO auditType:resolve-unknown-masters instance::0 cluster: message:Num resolved hostnames: 0
+2019-03-13 08:18:53 INFO auditType:forget-unseen-differently-resolved instance::0 cluster: message:Forgotten instances: 0
+2019-03-13 08:18:53 ERROR Will not resolve empty hostname
+2019-03-13 08:18:53 INFO auditType:inject-unseen-masters instance::0 cluster: message:Operations: 0
+2019-03-13 08:18:53 INFO auditType:review-unseen-instances instance::0 cluster: message:Operations: 0
+2019-03-13 08:18:53 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:54 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:55 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:55 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:57 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:57 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:18:57 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:18:59 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:19:00 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:19:00 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:19:01 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:19:01 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:19:02 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster
+2019-03-13 08:19:03 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:19:03 ERROR dial tcp 127.0.1.1:24801: connect: connection refused
+2019-03-13 08:19:04 INFO auditType:emergently-read-topology-instance instance:bluven:24801 cluster:bluven:24801 message:FirstTierSlaveFailingToConnectToMaster

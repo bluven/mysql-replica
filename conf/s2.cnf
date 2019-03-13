@@ -1,0 +1,44 @@
+[mysqld]
+server-id=2
+report-host=bluven
+port=24802
+bind-address=0.0.0.0
+binlog-format                  = ROW
+character-set-server           = utf8mb4
+collation-server               = utf8mb4_unicode_ci
+default-storage-engine         = InnoDB
+enforce-gtid-consistency       = on
+expire-logs-days               = 14
+gtid-mode                      = on
+innodb-file-per-table          = 1
+innodb-flush-log-at-trx-commit = 2
+innodb-flush-method            = O_DIRECT
+innodb-log-files-in-group      = 2
+key-buffer-size                = 32M
+log-bin                        = /var/lib/mysql/mysql-bin
+log-slave-updates              = on
+master_info_repository         = TABLE
+max-allowed-packet             = 16M
+max-connect-errors             = 1000000
+max-connections                = 500
+max-heap-table-size            = 32M
+myisam-recover-options         = FORCE,BACKUP
+open-files-limit               = 65535
+query-cache-size               = 0
+query-cache-type               = 0
+read-only                      = on
+relay-log-info-repository      = TABLE
+relay-log-recovery             = on
+skip-slave-start               = on
+sql-mode                       = STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_AUTO_VALUE_ON_ZERO,NO_ENGINE_SUBSTITUTION,NO_ZERO_DATE,NO_ZERO_IN_DATE,ONLY_FULL_GROUP_BY
+sync-binlog                    = 1
+sysdate-is-now                 = 1
+table-definition-cache         = 4096
+table-open-cache               = 4096
+thread-cache-size              = 50
+tmp-table-size                 = 32M
+innodb-buffer-pool-size        = 512M
+innodb-log-file-size           = 128M
+skip-host-cache
+skip-name-resolve
+!includedir /etc/mysql/conf.d
